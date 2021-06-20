@@ -49,7 +49,7 @@ func main() {
 	zero.Run(zero.Config{
 		NickName:      []string{"小冰", "smart_小冰哇", "kb小冰", "小冰冰", "冰冰"},
 		CommandPrefix: "/",
-		SuperUsers:    []string{"2782045774"}, // 必须修改，否则无权限
+		SuperUsers:    []string{"2782045774"}, // 必须修改，否则无权
 		Driver: []zero.Driver{
 			&driver.WSClient{
 				Url:         "ws://dash.de.xiuno.ga:2095",
