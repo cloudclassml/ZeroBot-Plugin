@@ -12,12 +12,12 @@ import (
 	// 实用类
 	_ "github.com/FloatTech/ZeroBot-Plugin/github"  // 搜索GitHub仓库
 	_ "github.com/FloatTech/ZeroBot-Plugin/manager" // 群管
-	_ "github.com/FloatTech/ZeroBot-Plugin/runcode" // 在线运行代码
+	//_ "github.com/FloatTech/ZeroBot-Plugin/runcode" // 在线运行代码
 
 	// 娱乐类
 	_ "github.com/FloatTech/ZeroBot-Plugin/music" // 点歌
-	//_ "github.com/Yiwen-Chan/ZeroBot-Plugin/randimg" //简易随机图片
-	_ "github.com/FloatTech/ZeroBot-Plugin/setutime" // 涩图
+	_ "github.com/Yiwen-Chan/ZeroBot-Plugin/randimg" //简易随机图片
+	//_ "github.com/FloatTech/ZeroBot-Plugin/setutime" // 涩图
 	_ "github.com/FloatTech/ZeroBot-Plugin/shindan"  // 测定
 
 	// 以下为内置依赖，勿动
@@ -47,12 +47,12 @@ func main() {
 ========================================================
 `) // 启动打印
 	zero.Run(zero.Config{
-		NickName:      []string{"椛椛", "ATRI", "atri", "亚托莉", "アトリ"},
+		NickName:      []string{"小冰", "smart_小冰哇", "kb小冰", "小冰冰", "冰冰"},
 		CommandPrefix: "/",
-		SuperUsers:    []string{"213864964"}, // 必须修改，否则无权限
+		SuperUsers:    []string{"2782045774"}, // 必须修改，否则无权限
 		Driver: []zero.Driver{
 			&driver.WSClient{
-				Url:         "ws://127.0.0.1:6700",
+				Url:         "ws://dash.de.xiuno.ga:2095",
 				AccessToken: "",
 			},
 		},
